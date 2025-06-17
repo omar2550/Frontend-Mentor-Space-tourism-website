@@ -1,0 +1,194 @@
+@use '../helpers/variables' as *;
+@use '../helpers/breakpoints' as *;
+
+
+body {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vb;
+}
+.tech-container {
+    text-align: center;
+        h3 {
+            color: $white;
+            padding: 24px 0;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: normal;
+            span {
+                padding-right: 24px;
+                opacity: 0.25;
+            }
+        }
+        .content {
+            .image {
+                margin-top: 64px;
+                margin-bottom: 32px;
+                width: 100%;
+                height: 258px;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    margin-top: -157px;
+                }
+            }
+            .info {
+                padding: 0 24px 48px;
+                text-align: center;
+                .pagination {
+                    margin-bottom: 40px;
+                    a {
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        border-radius: 50%;
+                        color: $white;
+                        font-size: 18px;
+                        border: 1px solid rgba($white, 0.25);
+                        transition: 0.3s;
+                        cursor: pointer;
+                        &:nth-child(2) {
+                            margin-left: 16px;
+                            margin-right: 16px;
+                        }
+                        &.active {
+                            color: $blue-900;
+                            background-color: $white;
+                        }
+                        &:hover {
+                            border-color: $white;
+                        }
+                    }
+                }
+            .text {
+                span {
+                    font-size: 18px;
+                    color: rgba($white, 0.5);
+                    text-transform: uppercase;
+                }
+                h1 {
+                    color: $white;
+                    font-size: 24px;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                    margin: 16px 0;
+                }
+                p {
+                    color: $blue-300;
+                    font-size: 15px;
+                    line-height: 1.7;
+                }
+            }
+        }
+    }
+    @include breakpoint-up(medium) {
+        h3 {
+            padding: 40px 0 24px 40px;
+            text-align: initial;
+            font-size: 20px;
+        }
+        .content {
+            .image {
+                height: 357px;
+                margin-top: 40px;
+                img {
+                    margin-top: -80px;
+                }
+            }
+            .info {
+                padding: 0 40px 40px;
+                .pagination {
+                    a {
+                        font-size: 24px;
+                        width: 56px;
+                        height: 56px;
+                        line-height: 56px;
+                    }
+                }
+                .text {
+                    span {
+                        font-size: 24px;
+                    }
+                    h1 {
+                        font-size: 40px;
+                    }
+                    p {
+                    margin: 0 auto;
+                    font-size: 19px;
+                    width: 512px;
+                }
+            }
+        }
+        }
+    }
+    .image {
+        margin: 0 auto;
+        width: fit-content;
+        img {
+            width: 447px;
+            height: 560px;
+        }
+    }
+    @include breakpoint-up(large) {
+        padding: 48px 0 48px 165px;
+        text-align: initial;
+        h3 {
+            font-size: 28px;
+            padding: 0px 0 24px 0px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            gap: 32px;
+            .image {
+                order: 1;
+                height: 100%;
+                width: fit-content;
+                margin: auto 0;
+                overflow: initial;
+                img {
+                    max-width: 608px;
+                    max-height: 600px;
+                    margin-top: 0;
+                }
+            }
+            .info {
+                display: flex;
+                padding: 215px 0;
+                gap: 64px;
+                max-width: 50%;
+                .pagination {
+                    align-items: center;
+                    margin-bottom: 0;
+                    a {
+                        display: block;
+                        font-size: 32px;
+                        width: 80px;
+                        height: 80px;
+                        line-height: 80px;
+                        &:nth-child(2) {
+                            margin: 32px 0;
+                        }
+                    }
+                }
+                .text {
+                    text-align: initial;
+                    span {
+                        font-size: 32px;
+                    }
+                    h1 {
+                        font-size: 56px;
+                        margin-bottom: 24px;
+                    }
+                    p {
+                        margin: 0;
+                        width: fit-content;
+                        max-width: 545px;
+                    }
+                }
+            }
+        }
+    }
+} 

@@ -1,0 +1,294 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Bellefair", serif;
+  background-color: #222;
+}
+
+nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .logo {
+  margin: 24px 0 24px 40px;
+}
+@media (min-width: 992px) {
+  nav .logo {
+    margin: 64px 0 24px 64px;
+  }
+}
+nav .links {
+  position: relative;
+}
+nav .links .bars {
+  color: #D0D6F9;
+  margin: 20px 33px 33px 0;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 5;
+  position: relative;
+}
+@media (min-width: 768px) {
+  nav .links .bars {
+    display: none;
+  }
+}
+nav .links ul {
+  display: none;
+}
+nav .links ul.opend {
+  display: block;
+  position: absolute;
+  top: -9px;
+  right: 0;
+  padding: 15px;
+  width: 250px;
+  height: 100vb;
+  background-color: rgba(183, 185, 196, 0.15);
+  -webkit-backdrop-filter: blur(80px);
+          backdrop-filter: blur(80px);
+  margin-left: 32px;
+  z-index: 3;
+}
+nav .links ul.opend li:first-child {
+  margin-top: 48px;
+}
+@media (min-width: 768px) {
+  nav .links ul {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(80px);
+            backdrop-filter: blur(80px);
+    margin-top: 0;
+    padding-left: 119px;
+  }
+}
+@media (min-width: 992px) {
+  nav .links ul {
+    margin-top: 40px;
+  }
+}
+nav .links ul li {
+  padding-top: 32px;
+}
+@media (min-width: 768px) {
+  nav .links ul li {
+    display: inline-block;
+    padding-top: 0;
+    margin-right: 48px;
+  }
+}
+nav .links ul li a {
+  display: block;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-right: 2px solid transparent;
+}
+@media (min-width: 768px) {
+  nav .links ul li a {
+    border-right: none;
+    border-bottom: 1px solid transparent;
+    padding: 39px 0;
+  }
+  nav .links ul li a:hover, nav .links ul li a.active {
+    border-bottom-color: #fff;
+  }
+}
+nav .links ul li a:hover, nav .links ul li a.active {
+  border-right-color: #fff;
+}
+nav .links ul li span {
+  font-weight: bold;
+}
+
+body {
+  background-image: url("../assets/crew/background-crew-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vb;
+}
+
+.crew-container {
+  padding: 24px;
+  text-align: center;
+}
+.crew-container h3 {
+  color: #fff;
+  margin: 0 0 24px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.crew-container h3 span {
+  padding-right: 24px;
+  opacity: 0.25;
+}
+.crew-container .content .info {
+  padding: 32px 0;
+}
+.crew-container .content .info .text {
+  margin: 30px 0 70px;
+}
+.crew-container .content .info .text span {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+.crew-container .content .info .text h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.crew-container .content .info .text p {
+  width: 327px;
+  color: #D0D6F9;
+  font-size: 15px;
+  margin: 0 auto;
+  line-height: 1.7;
+  padding-bottom: 24px;
+}
+.crew-container .content .info .Pagination {
+  text-align: center;
+}
+.crew-container .content .info .Pagination span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #979797;
+  margin: 0 16px 0 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.crew-container .content .info .Pagination span a {
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+.crew-container .content .info .Pagination span:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.crew-container .content .info .Pagination span.active {
+  background-color: #fff;
+}
+.crew-container .content .image img {
+  width: 270px;
+  height: 340px;
+  margin: 0px 27px;
+}
+@media (min-width: 768px) {
+  .crew-container {
+    padding: 40px;
+  }
+  .crew-container h3 {
+    text-align: initial;
+    font-size: 20px;
+  }
+  .crew-container .content .info {
+    text-align: center;
+  }
+  .crew-container .content .info .text {
+    margin: 15px 0 40px;
+  }
+  .crew-container .content .info .text span {
+    font-size: 24px;
+  }
+  .crew-container .content .info .text h1 {
+    margin-top: 16px;
+    font-size: 40px;
+  }
+  .crew-container .content .info .text p {
+    width: 512px;
+  }
+  .crew-container .image {
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .crew-container .image img {
+    width: 447px;
+    height: 560px;
+  }
+}
+@media (min-width: 992px) {
+  .crew-container {
+    padding: 48px 165px;
+    text-align: initial;
+  }
+  .crew-container h3 {
+    font-size: 28px;
+  }
+  .crew-container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 32px;
+  }
+  .crew-container .content .info {
+    text-align: initial;
+    padding: 0;
+  }
+  .crew-container .content .info .text {
+    margin-top: 197px;
+    margin-bottom: 197px;
+    padding-bottom: 24px;
+  }
+  .crew-container .content .info .text span {
+    font-size: 32px;
+  }
+  .crew-container .content .info .text h1 {
+    font-size: 56px;
+  }
+  .crew-container .content .info .text p {
+    width: 90%;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
+  .crew-container .content .info .Pagination {
+    text-align: initial;
+  }
+  .crew-container .content .info .Pagination span {
+    width: 15px;
+    height: 15px;
+  }
+  .crew-container .content .image {
+    padding: 30px 0;
+  }
+  .crew-container .content .image img {
+    width: 540px;
+    height: 676px;
+  }
+}
