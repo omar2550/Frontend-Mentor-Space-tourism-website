@@ -1,10 +1,10 @@
 window.onload = function () {
   if (window.innerWidth >= 992) {
-    document.body.style.backgroundImage = `url("../../assets/home/background-home-desktop.jpg")`;
+    document.body.style.backgroundImage = `url("/assets/home/background-home-desktop.jpg")`;
   } else if (window.innerWidth >= 768) {
-    document.body.style.backgroundImage = `url("../../assets/home/background-home-tablet.jpg")`;
+    document.body.style.backgroundImage = `url("/assets/home/background-home-tablet.jpg")`;
   } else {
-    document.body.style.backgroundImage = `url("../../assets/home/background-home-mobile.jpg")`;
+    document.body.style.backgroundImage = `url("/assets/home/background-home-mobile.jpg")`;
   }
 };
 
