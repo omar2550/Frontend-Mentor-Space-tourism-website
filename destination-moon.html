@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="sass/normalize.css" />
+    <link rel="stylesheet" href="sass/all.min.css" />
+    <link rel="stylesheet" href="sass/dest.css" />
+  </head>
+  <body>
+    <nav>
+      <span class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+          <g fill="none" fill-rule="evenodd">
+            <circle cx="24" cy="24" r="24" fill="#FFF" />
+            <path
+              fill="#0B0D17"
+              d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+            />
+          </g>
+        </svg>
+      </span>
+      <div class="links">
+        <i class="fa-solid fa-bars bars"></i>
+        <ul>
+          <li>
+            <a href="index.html"><span>00</span> Home</a>
+          </li>
+          <li>
+            <a class="active" href="destination-moon.html"
+              ><span>01</span> Destination</a
+            >
+          </li>
+          <li>
+            <a href="crew-commander.html"><span>02</span> Crew</a>
+          </li>
+          <li>
+            <a href="technology-vehicle.html"><span>03</span> Technology</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <script src="js/navbar.js"></script>
+    <section class="dest-container">
+      <h3><span>01</span> Pick your destination</h3>
+      <div class="content">
+        <div class="image">
+          <img src="/assets/destination/image-moon.png" alt="" />
+        </div>
+        <div class="info">
+          <ul>
+            <li><a class="active" href="/destination-moon.html">Moon</a></li>
+            <li><a href="/destination-mars.html">Mars</a></li>
+            <li><a href="/destination-europa.html">Europa</a></li>
+            <li><a href="/destination-titan.html">Titan</a></li>
+          </ul>
+          <div class="text">
+            <h1>Moon</h1>
+            <p>
+              See our planet as you’ve never seen it before. A perfect relaxing
+              trip away to help regain perspective and come back refreshed.
+              While you’re there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </p>
+          </div>
+          <div class="stats">
+            <p>
+              <span>Avg. distance</span>
+              384,400 km
+            </p>
+            <p>
+              <span>Est. travel time</span>
+              3 days
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/dest.js"></script>
+  </body>
+</html>

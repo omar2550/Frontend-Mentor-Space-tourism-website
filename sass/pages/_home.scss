@@ -1,0 +1,91 @@
+@use '../helpers/variables' as *;
+@use '../helpers/breakpoints' as *;
+@use './helpers/mixins' as *;
+
+body {
+    background-image: url("../../assets/home/background-home-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vb;
+}
+section {
+    .section-content {
+        .section-text {
+            text-align: center;
+            margin-top: 24px;
+            margin-bottom: 180px;
+            span {
+                color: $blue-300;
+                font-size: 28px;
+            }
+            h1 {
+                color: $white;
+                font-size: 80px;
+                font-weight: normal;
+                text-transform: uppercase;
+                margin: 24px 0;
+            }
+            p {
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+                color: $blue-300;
+                font-size: 18px;
+                line-height: 1.6;
+            }
+        }
+        .button {
+                width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+                button {
+                    &:hover {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+    }
+    @include breakpoint-up(medium) {
+        margin: 128px 40px;
+        .section-content {
+            .section-text {
+                margin-bottom: 70px;
+                h1 {
+                    font-size: 144px;
+                }   
+            }
+            .button {
+                button {
+                    &:hover {
+                        &::before {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include breakpoint-up(large) {
+        margin: 128px 165px;
+        padding-top: 290px;
+        .section-content {
+            display: flex;
+            .section-text {
+                margin-bottom: 0;
+                text-align: initial;
+                width: 50%;
+                p {
+                    width: 80%;
+                    margin-left: 0;
+                }
+            }
+            .button {
+                margin-top: auto;
+                margin-right: 0;
+                margin-left: auto;
+            }
+        }
+    }
+}
